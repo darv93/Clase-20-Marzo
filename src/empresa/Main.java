@@ -24,7 +24,8 @@ public class Main {
                            +" 2. Listar"
                            +" 3. Nomina"
                            +" 4. Nomina Programador"
-                           +" 5. Salir");
+                           +" 5. Eliminar Empleado"
+                           +" 6. Salir");
         opcion=teclado.nextInt();
         return (opcion);
     }
@@ -69,6 +70,11 @@ public class Main {
                     System.out.println("Nomina Programador "+ nominaProgramador);
                     break;
                 case 5:
+                    System.out.println("Ingrese nombre del empleado");
+                    String nombreEmpleado = teclado.next();
+                    empresa.eliminarEmpleado(nombreEmpleado);
+                    break;
+                case 6:
                     System.out.println("Hasta Pronto.");
                     break;
                 default :
