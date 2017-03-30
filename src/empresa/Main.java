@@ -73,8 +73,8 @@ public class Main {
                     break;
                 default :
                     System.out.println("Invalido");
-            }           
-        }
+            }         
+        }while(opcion!=5); 
         
         
         
